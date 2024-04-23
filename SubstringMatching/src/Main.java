@@ -39,11 +39,11 @@ public class Main {
 
         System.out.println("Waiting for result...");
 
-        List<int> res = new List<>();
+        List<Integer> res = new ArrayList<Integer>();
 
         for (int i = 0; i < numPoints; i++) {
-            List<int> partialResult = (List<int>)channels[i].readObject();
-            result.addAll(partialResult);
+            List<Integer> partialResult = (List<Integer>)channels[i].readObject();
+            res.addAll(partialResult);
             points[i].delete();
         }
 

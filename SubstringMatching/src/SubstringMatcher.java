@@ -13,7 +13,7 @@ public class SubstringMatcher implements AM {
         for (int i = 0; i < text.length() - pattern.length() + 1; i++) {
             boolean isMatch = true;
             for(int j = 0; j < pattern.length(); j++){
-                if(text[i+j] != pattern[j]){
+                if(text.charAt(i+j) != pattern.charAt(j)){
                     isMatch = false;
                     break;
                 }
@@ -24,6 +24,6 @@ public class SubstringMatcher implements AM {
             }
         }
 
-        info.parent.write(res);
+        info.parent.write((Serializable)res);
     }
 }

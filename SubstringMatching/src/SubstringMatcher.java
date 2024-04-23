@@ -24,6 +24,6 @@ public class SubstringMatcher implements AM {
             }
         }
 
-        info.parent.write((Serializable)res);
+        info.parent.write(res);
     }
 }

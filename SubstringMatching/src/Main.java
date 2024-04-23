@@ -45,7 +45,7 @@ public class Main {
             List<Integer> partialResult = (List<Integer>)channels[i].readObject();
             
             for(int index : partialResult){
-                res.add(i*chunkSize + index)
+                res.add(i*chunkSize + index);
             }
 
             points[i].delete();

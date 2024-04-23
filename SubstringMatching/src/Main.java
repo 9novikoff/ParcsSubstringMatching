@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.io.File;
 import parcs.*;
 
-public class Bluck {
+public class Main {
     public static void main(String[] args) throws Exception {
         String text = "Romeo and Romeo";
         String pattern = "Romeo";
@@ -46,7 +46,6 @@ public class Bluck {
             points[i].delete();
         }
 
-        System.out.println("Result: " + integralResult);
         curtask.end();
     }
 }

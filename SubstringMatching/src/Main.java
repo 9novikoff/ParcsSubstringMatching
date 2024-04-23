@@ -43,7 +43,11 @@ public class Main {
 
         for (int i = 0; i < numPoints; i++) {
             List<Integer> partialResult = (List<Integer>)channels[i].readObject();
-            res.addAll(partialResult);
+            
+            for(int index : partialResult){
+                res.add(i*chunkSize + index)
+            }
+
             points[i].delete();
         }
 

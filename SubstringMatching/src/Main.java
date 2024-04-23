@@ -47,6 +47,11 @@ public class Main {
             points[i].delete();
         }
 
+        for(int index : res){
+            System.out.print(index);
+            System.out.print(" ");
+        }
+
         curtask.end();
     }
 }

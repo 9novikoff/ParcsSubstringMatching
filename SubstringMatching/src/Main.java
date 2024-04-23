@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         String text = "Romeo and Romeo";
         String pattern = "Romeo";
+        int numPoints = 4;
 
         task curtask = new task();
         curtask.addJarFile("SubstringMatcher.jar");

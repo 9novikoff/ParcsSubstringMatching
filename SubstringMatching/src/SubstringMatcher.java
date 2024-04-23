@@ -8,7 +8,7 @@ public class SubstringMatcher implements AM {
         String text = (String)info.parent.readObject();
         String pattern = (String)info.parent.readObject();
 
-        List<int> res = new List<>();
+        List<Integer> res = new ArrayList<Integer>();
 
         for (int i = 0; i < text.length() - pattern.length() + 1; i++) {
             boolean isMatch = true;

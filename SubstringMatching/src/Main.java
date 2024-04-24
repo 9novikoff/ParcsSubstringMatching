@@ -61,7 +61,7 @@ public class Main {
 
         long finish = System.nanoTime();
         long timeElapsed = finish - start;
-        System.out.println("Execution time: " + timeElapsed) + " ns";
+        System.out.println("Execution time: " + timeElapsed + " ns");
 
         for(int index : res){
             System.out.print(index);

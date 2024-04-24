@@ -27,6 +27,8 @@ public class Main {
         int patternLen = pattern.length();
         int chunkSize = (textLen - patternLen + 1) / numPoints;
 
+        long start = System.nanoTime();
+
         for (int i = 0; i < numPoints; i++) {
             points[i] = info.createPoint();
             channels[i] = points[i].createChannel();
@@ -55,6 +57,10 @@ public class Main {
 
             points[i].delete();
         }
+
+        long finish = System.nanoTime();
+        long timeElapsed = finish - start;
+        System.out.println("Execution time: " + timeElapsed);
 
         for(int index : res){
             System.out.print(index);

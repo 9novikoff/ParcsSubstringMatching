@@ -7,7 +7,8 @@ import parcs.*;
 public class Main {
     public static void main(String[] args) throws Exception {
         //String text = "Romeo and Romeo";
-        String text = Files.readString("input");
+        Path filePath = Path.of("input");
+        String text = Files.readString(filePath);
         String pattern = "Romeo";
         int numPoints = 4;
 

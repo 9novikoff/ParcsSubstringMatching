@@ -11,9 +11,10 @@ public class Main {
     public static void main(String[] args) throws Exception {
         //String text = "Romeo and Romeo";
         Path filePath = Path.of("input");
+        Path numPointsPath = Path.of("numPoints"); 
         String text = Files.readString(filePath);
         String pattern = "Romeo";
-        int numPoints = 4;
+        int numPoints = Integer.parseInt(Files.readLine(numPointsPath));
 
         task curtask = new task();
         curtask.addJarFile("SubstringMatcher.jar");
@@ -60,7 +61,7 @@ public class Main {
 
         long finish = System.nanoTime();
         long timeElapsed = finish - start;
-        System.out.println("Execution time: " + timeElapsed);
+        System.out.println("Execution time: " + timeElapsed) + " ns";
 
         for(int index : res){
             System.out.print(index);

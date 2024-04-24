@@ -14,7 +14,7 @@ public class Main {
         Path numPointsPath = Path.of("numPoints"); 
         String text = Files.readString(filePath);
         String pattern = "Romeo";
-        int numPoints = Integer.parseInt(Files.readLine(numPointsPath));
+        int numPoints = Integer.parseInt(Files.readAllLines(numPointsPath).get(0));
 
         task curtask = new task();
         curtask.addJarFile("SubstringMatcher.jar");
